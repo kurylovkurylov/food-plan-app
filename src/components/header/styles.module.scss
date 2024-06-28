@@ -1,0 +1,40 @@
+@import 'src/styles/colors.scss';
+
+.Header {
+  height: 3rem;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: $color-bg-150;
+
+  &__title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: $color-text-300;
+  }
+}
+
+.Navigation {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+
+  &__item {
+    font-size: 0.75rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: $color-text-300;
+    transition: opacity 0.25s;
+
+    &_active {
+      color: $color-text-100;
+    }
+
+    &:hover {
+      opacity: 0.65;
+    }
+  }
+}
